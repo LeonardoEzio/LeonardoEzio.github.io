@@ -8,10 +8,10 @@
   <meta name="description" content>
   <meta name="author" content="LeonardoEzio">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="LeonardoEzio">
+  <meta property="og:title" content="CentOS 6.5 虚拟机网络桥接模式设置">
   <meta property="og:description" content="一个不那么厉害的程序员">
   <meta property="og:site_name" content="LeonardoEzio">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
   <meta property="og:image" content="http://LeonardoEzio.github.io">
   
     <link rel="alternate" href="/atom.xml" title="LeonardoEzio" type="application/atom+xml">
@@ -43,8 +43,8 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">LeonardoEzio</p>
-          <p class="subtitle">We know it when we see it</p>
+          <p class="title">CentOS 6.5 虚拟机网络桥接模式设置</p>
+          <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
           <ul>
@@ -88,92 +88,56 @@
   </div>
 </header>
 
-<!-- Home Page Post List -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
-      
-        <div class="post-item-wrapper">
-  <a href="/2019/04/04/CentOS 6.5 虚拟机桥接模式设置/" class="post-title">
-      CentOS 6.5 虚拟机网络桥接模式设置
-  </a>
-  <div class="post-excerpt">
-    <!-- Post Date and Categories -->
-    <div class="date-and-category">
-      <div class="date">2019-04-04</div>
-      <div class="categories">
-        
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
           
+            <!-- Author -->
+            <span class="author info">By LeonardoEzio</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2019-04-04</span>
+            <span class="time">10:25:20</span>
+          </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
 
 <a href="/categories/Linux系统/">Linux系统</a>
-
+</span>
+          
+        </div>
+        <!-- Tags -->
         
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/Linux/">#Linux</a>
+
+
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h5 id="Step-One"><a href="#Step-One" class="headerlink" title="Step One :"></a>Step One :</h5><p>​    在VMware Workstation 的控制台中将虚拟机设置中的网络连接模式更改为桥接模式</p>
+<p><img src="C:\Users\Linux\AppData\Roaming\Typora\typora-user-images\1554364393044.png" alt="1554364393044"></p>
+<h5 id="Step-Two"><a href="#Step-Two" class="headerlink" title="Step Two :"></a>Step Two :</h5><p>​    VMware WorkStation控制台 –&gt; 编辑 –&gt; 虚拟网络编辑器 将桥接模式的网卡选中为外部主机所使用的网卡。</p>
+<p><img src="C:\Users\Linux\AppData\Roaming\Typora\typora-user-images\1554364554836.png" alt="1554364554836"></p>
+<p><img src="C:\Users\Linux\AppData\Roaming\Typora\typora-user-images\1554364637448.png" alt="1554364637448"></p>
+<h5 id="Step-Three"><a href="#Step-Three" class="headerlink" title="Step Three:"></a>Step Three:</h5><p>​    虚拟机中配置网络选项，除ip地址之外，其他选项最后与外部网络设置保持一致。</p>
+<p><img src="C:\Users\Linux\AppData\Roaming\Typora\typora-user-images\1554366399749.png" alt="1554366399749"></p>
+<p><img src="C:\Users\Linux\AppData\Roaming\Typora\typora-user-images\1554366427734.png" alt="1554366427734"></p>
+<h5 id="Step-Four"><a href="#Step-Four" class="headerlink" title="Step Four :"></a>Step Four :</h5><p>最后检查一下虚拟机防火墙，以及外部主机防火墙设置。然后就可以ping 通了</p>
+<p><img src="C:\Users\Linux\AppData\Roaming\Typora\typora-user-images\1554367153106.png" alt="1554367153106"></p>
+
+        </div>
       </div>
     </div>
-    <!-- Post Excerpt -->
-    <div class="excerpt typo">暂无文章摘要</div>
-    <!-- Post Tags -->
-    <div class="tags">
-      
-        
-
-<a class="tag" href="/tags/Linux/">Linux</a>
-
-
-      
-    </div>
   </div>
-</div>
-
-      
-        <div class="post-item-wrapper">
-  <a href="/2019/03/17/时间复杂度与空间复杂度/" class="post-title">
-      时间复杂度与空间复杂度
-  </a>
-  <div class="post-excerpt">
-    <!-- Post Date and Categories -->
-    <div class="date-and-category">
-      <div class="date">2019-03-17</div>
-      <div class="categories">
-        
-          
-
-<a href="/categories/数据结构与算法/">数据结构与算法</a>
-
-        
-      </div>
-    </div>
-    <!-- Post Excerpt -->
-    <div class="excerpt typo">暂无文章摘要</div>
-    <!-- Post Tags -->
-    <div class="tags">
-      
-        
-
-<a class="tag" href="/tags/算法/">算法</a>
-
-
-      
-    </div>
-  </div>
-</div>
-
-      
-    </div>
-  </div>
-</div>
-
-<!-- Pagination -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
-      <ul class="pagination">
-          
-          
-      </ul>
-    </div>
-  </div>
-</div>
+</article>
 
 
 
