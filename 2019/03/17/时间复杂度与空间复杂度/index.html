@@ -8,10 +8,10 @@
   <meta name="description" content>
   <meta name="author" content="LeonardoEzio">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="LeonardoEzio">
+  <meta property="og:title" content="时间复杂度与空间复杂度">
   <meta property="og:description" content="一个不那么厉害的程序员">
   <meta property="og:site_name" content="LeonardoEzio">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
   <meta property="og:image" content="http://LeonardoEzio.github.io">
   
     <link rel="alternate" href="/atom.xml" title="LeonardoEzio" type="application/atom+xml">
@@ -43,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">无标题文章</p>
+          <p class="title">时间复杂度与空间复杂度</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -61,22 +61,6 @@
                 <a href="/archives">
                   
                   归档
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="/tags">
-                  
-                  标签
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="/categories">
-                  
-                  分类
                   
                 </a>
               </li>
@@ -115,17 +99,30 @@
           
           <!-- Date -->
           <span class="date-time info">On
-            <span class="date">2019-04-16</span>
-            <span class="time">18:20:46</span>
+            <span class="date">2019-03-17</span>
+            <span class="time">10:05:53</span>
           </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
+
+<a href="/categories/数据结构与算法/">数据结构与算法</a>
+</span>
           
         </div>
         <!-- Tags -->
         
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/算法/">#算法</a>
+
+
+          </div>
+        
         <!-- Post Main Content -->
         <div class="post-content">
-          <p>title：时间复杂度与空间复杂度概述</p>
-<h4 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h4><blockquote>
+          <h4 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h4><blockquote>
 <p>执行效率是考量一个算法是否高效的主要指标。然而时间、空间复杂度又是衡量算法执行效率的主要维度</p>
 </blockquote>
 <h5 id="一、事后统计法的局限"><a href="#一、事后统计法的局限" class="headerlink" title="一、事后统计法的局限"></a>一、事后统计法的局限</h5><blockquote>
@@ -221,7 +218,13 @@
 </li>
 <li><p><strong>O(m+n)、O(m * n)</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> m , <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">   </span><br><span class="line">       <span class="keyword">int</span> sumOne = <span class="number">0</span>;</span><br><span class="line">   </span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span> ; i&lt;= m ; ++i)&#123;</span><br><span class="line">           sumOne += m;</span><br><span class="line">       &#125;</span><br><span class="line">   </span><br><span class="line">       <span class="keyword">int</span> sumTwo = <span class="number">0</span>;</span><br><span class="line">   </span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span> ; j&lt;= n ; ++j)&#123;</span><br><span class="line">           sumTwo += j;</span><br><span class="line">       &#125;</span><br><span class="line">   </span><br><span class="line">       <span class="keyword">return</span> sumOne+sumTwo;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>上述代码中，复杂度取决于两个数据规模 m 与 n，因此无法事先评估m 与 n 谁的量级更大</p>
+<p>上述代码中，复杂度取决于两个数据规模 m 与 n，因此无法事先评估m 与 n 谁的量级更大,因此加法法则在这里不适用。因此上段代码的时间复杂度即为O(m+n)。但是乘法法则依旧适用：T1(m) x T2(n) = O(f(m) x f(n))。</p>
+<p><strong>五、空间复杂度分析</strong></p>
+<blockquote>
+<p>空间复杂度就是<strong>渐进空间复杂度</strong>（asymptotic space complexity）,表示算法的存储空间与数据规模之间的增长关系。</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">initArray</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="number">1</span>   <span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[n];</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span> ; i&lt;= n ; ++i)&#123;</span><br><span class="line">           arr[i] = i * i;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>如上述代码所示，我们在第一行代码中申请了一个大小为n的int类型数组，除此之外其他的代码都没有占据更多的空间，因此整段代码的空间复杂度就是O(n)，相对于时间复杂度而言，空间复杂度的分析要更为简单。</p>
 </li>
 </ol>
 
